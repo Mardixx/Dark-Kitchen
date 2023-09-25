@@ -73,6 +73,15 @@ header h1 {
   letter-spacing: 10px;
 }
 
+.tri {
+  padding: 5px;
+  margin: 10px auto 10px auto;
+  background-color: lightgray;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+}
+
 .sect-article {
   display: grid;
   grid-template-columns: repeat(9, 9rem);
@@ -86,7 +95,7 @@ header h1 {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: aqua;
+  background-color: lightgray;
   margin: 0 5px 0 5px;
   border-radius: 10px;
 }
