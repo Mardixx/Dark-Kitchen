@@ -28,8 +28,8 @@ function reviews() {
   
     // create elements
     customersarray.forEach((customersarray) => {
-      const customer = document.createElement("review");
-      customer.classList.add("customer");
+      const customer = document.createElement("div");
+      customer.classList.add("review");
       
       const picture = document.createElement("img");
       picture.src = customersarray.picture;

@@ -84,3 +84,23 @@ header {
         }
     }
 }
+
+
+
+.sect-review{
+    display:flex;
+    
+    .review{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        img{
+            border-radius: 5.625rem;
+        }
+        .comment{
+            text-align:center;
+        }
+    }
+}
+
