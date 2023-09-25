@@ -2,7 +2,7 @@
 
 
 // Attention à l'ordre des imports (ex : ne pas mettre un fichiers qui a besoins des variables avant l'import de celles-ci
-@import './vendors/reset';
-@import './utils/variables';
-@import './utils/mixins';
-@import './base/base.scss'
+@import '_reset';
+@import '_variables';
+@import '_mixins';
+@import '_base.scss'
