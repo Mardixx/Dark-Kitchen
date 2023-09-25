@@ -75,8 +75,10 @@ header h1 {
 
 .sect-article {
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(9, 9rem);
+  grid-template-rows: repeat(2, 17rem);
+  gap: 1rem;
+  overflow: auto;
 }
 .sect-article .card {
   display: flex;
@@ -84,10 +86,24 @@ header h1 {
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: aqua;
+  margin: 0 5px 0 5px;
+  border-radius: 10px;
+}
+.sect-article .card .category {
+  margin: 5px 0 5px 0;
+}
+.sect-article .card .price {
+  margin: 5px 0 5px 0;
+}
+.sect-article .card .name {
+  text-align: center;
+  margin: 5px 0 5px 0;
 }
 .sect-article .card .picture {
-  width: 100px;
-  margin: auto;
+  width: 7rem;
+  height: 8rem;
+  margin: 5px 0 5px 0;
   border-radius: 10px;
 }
 .sect-article .card .addItem {

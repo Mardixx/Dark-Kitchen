@@ -23,8 +23,10 @@ header {
 
 .sect-article {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(9, 9rem);
+    grid-template-rows: repeat(2, 17rem);
+    gap: 1rem;
+    overflow: auto;
 
     .card {
         display: flex;
@@ -32,10 +34,27 @@ header {
         align-items: center;
         justify-content: center;
         position: relative;
+        background-color: aqua;
+        margin: 0 5px 0 5px;
+        border-radius: 10px;
+
+        .category {
+            margin: 5px 0 5px 0;
+        }
+
+        .price {
+            margin: 5px 0 5px 0;
+        }
+
+        .name {
+            text-align: center;
+            margin: 5px 0 5px 0;
+        }
 
         .picture {
-            width: 100px;
-            margin: auto;
+            width: 7rem;
+            height: 8rem;
+            margin: 5px 0 5px 0;
             border-radius: 10px;
             
         }
