@@ -4,6 +4,10 @@
     background-color: gray;
 }
 
+body {
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
 header {
     background-image: url("../ressources/restaurant/emran-yousof-aSOYsEMwWaI-unsplash-min.jpg");
     background-size: cover;
@@ -27,6 +31,10 @@ header {
     background-color: lightgray;
     width: fit-content;
     border-radius: 10px;
+
+    #category-select {
+        font-family: 'Sedgwick Ave Display', cursive;
+    }
 }
 
 
@@ -36,6 +44,7 @@ header {
     grid-template-rows: repeat(2, 17rem);
     gap: 1rem;
     overflow: auto;
+    margin: 20px 0 20px 0;
     
     .card {
         display: flex;
