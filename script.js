@@ -160,7 +160,10 @@ function generateHTML(array) {
       addItemImg.classList.add("addItemImg");
       
       cards.appendChild(card);
+
+      
     });
+    listenToAddingCart();
   }
 
 //call function
