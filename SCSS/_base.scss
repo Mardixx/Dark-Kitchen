@@ -1,2 +1,22 @@
 //Style commun à tous les éléments
 
+.darkmode {
+    background-color: gray;
+}
+
+header {
+    background-image: url("../ressources/restaurant/emran-yousof-aSOYsEMwWaI-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    h1 {
+        color: #ffffff;
+        text-shadow: #000000 3px 2px;
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
+}
