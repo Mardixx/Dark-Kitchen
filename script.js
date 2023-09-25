@@ -122,10 +122,10 @@ const collection = [
 
 const cards = document.querySelector(".sect-article");
 
-function generateHTML(array) {
+function generateHTML() {
   
     // create elements
-    array.forEach((collection) => {
+    collection.forEach((collection) => {
       const card = document.createElement("article");
       card.classList.add("card");
       
