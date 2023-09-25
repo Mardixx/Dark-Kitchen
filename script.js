@@ -140,12 +140,12 @@ function generateHTML(array) {
       card.appendChild(name);
       name.classList.add("name");
     
-      const price = document.createElement("p");
+      const price = document.createElement("span");
       price.textContent = collection.price;
       card.appendChild(price);
       price.classList.add("price");
     
-      const category = document.createElement("p");
+      const category = document.createElement("span");
       category.textContent = collection.category;
       card.appendChild(category);
       category.classList.add("category");
@@ -162,6 +162,7 @@ function generateHTML(array) {
       cards.appendChild(card);
     });
   }
+
 //call function
 generateHTML(filteredCollection);
 
