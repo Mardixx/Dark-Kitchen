@@ -121,11 +121,12 @@ const collection = [
 ];
 
 const cards = document.querySelector(".sect-article");
+let filteredCollection = collection;
 
-function generateHTML() {
+function generateHTML(array) {
   
     // create elements
-    collection.forEach((collection) => {
+    array.forEach((collection) => {
       const card = document.createElement("article");
       card.classList.add("card");
       
@@ -161,5 +162,30 @@ function generateHTML() {
       cards.appendChild(card);
     });
   }
-  //call function
-  generateHTML();
+//call function
+generateHTML(filteredCollection);
+
+
+
+const options = document.getElementById("category-select");
+// event listener on change option
+options.addEventListener("change", function () {
+    filterByCategory(options.value)
+})
+
+// add the function to sort
+function filterByCategory(filterString) {
+
+    // if the value option is none
+    if (filterString == "none") {
+      cards.innerText = "";
+      //generate the collection
+      generateHTML(collection);
+    }
+    else{
+      filteredCollection = collection.filter(item => item.category == filterString);
+      cards.innerText = "";
+      // generate filter collection
+      generateHTML(filteredCollection);
+    }
+  }
