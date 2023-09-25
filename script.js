@@ -161,6 +161,5 @@ function generateHTML() {
       cards.appendChild(card);
     });
   }
-  
   //call function
   generateHTML();
