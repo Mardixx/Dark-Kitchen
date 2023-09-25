@@ -8,14 +8,14 @@ const customersarray = [
     },
     {
     name : 'Lisa',
-    profil : "./ressources/People/image-Lisa.jpg",
+    picture : "./ressources/People/image-Lisa.jpg",
     date : "7/5/2022",
     dish : "California Rolls Salmon Mix",
     comment : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, assumenda!",
     },
     {
     name : 'Elie',
-    profil : "./ressources/People/image-Elie.jpg",
+    picture : "./ressources/People/image-Elie.jpg",
     date : "7/5/2022",
     dish : "Gyoza",
     comment : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, assumenda!",
