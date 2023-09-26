@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,8 +57,12 @@ table {
   background-color: gray;
 }
 
+body {
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
 header {
-  background-image: url("../ressources/restaurant/emran-yousof-aSOYsEMwWaI-unsplash.jpg");
+  background-image: url("../ressources/restaurant/emran-yousof-aSOYsEMwWaI-unsplash-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
@@ -71,4 +76,80 @@ header h1 {
   text-shadow: #000000 3px 2px;
   font-size: 40px;
   letter-spacing: 10px;
+}
+
+.tri {
+  padding: 5px;
+  margin: 10px auto 10px auto;
+  background-color: lightgray;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+}
+.tri #category-select {
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
+.sect-article {
+  display: grid;
+  grid-template-columns: repeat(9, 9rem);
+  grid-template-rows: repeat(2, 17rem);
+  gap: 1rem;
+  overflow: auto;
+  margin: 20px 0 20px 0;
+}
+.sect-article .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: lightgray;
+  margin: 0 5px 0 5px;
+  border-radius: 10px;
+}
+.sect-article .card .category {
+  margin: 5px 0 5px 0;
+}
+.sect-article .card .price {
+  margin: 5px 0 5px 0;
+}
+.sect-article .card .name {
+  text-align: center;
+  margin: 5px 0 5px 0;
+}
+.sect-article .card .picture {
+  width: 7rem;
+  height: 8rem;
+  margin: 5px 0 5px 0;
+  border-radius: 10px;
+}
+.sect-article .card .addItem {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.sect-article .card .addItem .addItemImg {
+  width: 30px;
+  border-radius: 10px;
+}
+
+.sect-review {
+  display: flex;
+}
+.sect-review .review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sect-review .review img {
+  border-radius: 5.625rem;
+}
+.sect-review .review .comment {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

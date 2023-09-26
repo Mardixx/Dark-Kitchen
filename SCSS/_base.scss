@@ -4,8 +4,12 @@
     background-color: gray;
 }
 
+body {
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
 header {
-    background-image: url("../ressources/restaurant/emran-yousof-aSOYsEMwWaI-unsplash.jpg");
+    background-image: url("../ressources/restaurant/emran-yousof-aSOYsEMwWaI-unsplash-min.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 200px;
@@ -20,3 +24,92 @@ header {
         letter-spacing: 10px;
     }
 }
+
+.tri {
+    padding: 5px;
+    margin: 10px auto 10px auto;
+    background-color: lightgray;
+    width: fit-content;
+    border-radius: 10px;
+
+    #category-select {
+        font-family: 'Sedgwick Ave Display', cursive;
+    }
+}
+
+
+.sect-article {
+    display: grid;
+    grid-template-columns: repeat(9, 9rem);
+    grid-template-rows: repeat(2, 17rem);
+    gap: 1rem;
+    overflow: auto;
+    margin: 20px 0 20px 0;
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: lightgray;
+        margin: 0 5px 0 5px;
+        border-radius: 10px;
+
+        .category {
+            margin: 5px 0 5px 0;
+        }
+
+        .price {
+            margin: 5px 0 5px 0;
+        }
+
+        .name {
+            text-align: center;
+            margin: 5px 0 5px 0;
+        }
+
+        .picture {
+            width: 7rem;
+            height: 8rem;
+            margin: 5px 0 5px 0;
+            border-radius: 10px;
+            
+        }
+    
+        .addItem {
+            width: 30px;
+            height: 30px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            
+            .addItemImg {
+                width: 30px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
+
+.sect-review{
+    display:flex;
+    
+    .review{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        img{
+            border-radius: 5.625rem;
+        }
+        .comment{
+            text-align:center;
+        }
+    }
+}
+

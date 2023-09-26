@@ -121,11 +121,12 @@ const collection = [
 ];
 
 const cards = document.querySelector(".sect-article");
+let filteredCollection = collection;
 
-function generateHTML() {
+function generateHTML(array) {
   
     // create elements
-    collection.forEach((collection) => {
+    array.forEach((collection) => {
       const card = document.createElement("article");
       card.classList.add("card");
       
@@ -139,12 +140,12 @@ function generateHTML() {
       card.appendChild(name);
       name.classList.add("name");
     
-      const price = document.createElement("p");
+      const price = document.createElement("span");
       price.textContent = collection.price;
       card.appendChild(price);
       price.classList.add("price");
     
-      const category = document.createElement("p");
+      const category = document.createElement("span");
       category.textContent = collection.category;
       card.appendChild(category);
       category.classList.add("category");
@@ -159,7 +160,36 @@ function generateHTML() {
       addItemImg.classList.add("addItemImg");
       
       cards.appendChild(card);
+
+      
     });
+    listenToAddingCart();
   }
-  //call function
-  generateHTML();
+
+//call function
+generateHTML(filteredCollection);
+
+
+
+const options = document.getElementById("category-select");
+// event listener on change option
+options.addEventListener("change", function () {
+    filterByCategory(options.value)
+})
+
+// add the function to sort
+function filterByCategory(filterString) {
+
+    // if the value option is none
+    if (filterString == "none") {
+      cards.innerText = "";
+      //generate the collection
+      generateHTML(collection);
+    }
+    else{
+      filteredCollection = collection.filter(item => item.category == filterString);
+      cards.innerText = "";
+      // generate filter collection
+      generateHTML(filteredCollection);
+    }
+  }
