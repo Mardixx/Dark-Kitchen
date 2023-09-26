@@ -47,18 +47,18 @@
     animation: slideIn 0.5s forwards;
 }
 
-// .animateOff{
-//     animation: slideOut 0.5s;
-// }
+.animateOff{
+    animation: slideOut 0.5s linear;
+}
 
 @keyframes slideIn {
     0% { transform: translateX(-100%); }
     100% { transform: translateX(1vh); }
 }
 
-// @keyframes slideOut {
-//   0% { transform: translateX(1vh); }
-//   100% { transform: translateX(-100%); }
+@keyframes slideOut {
+  0% { transform: translateX(1vh); }
+  100% { transform: translateX(-100%); }
   
-// }
+}
 
