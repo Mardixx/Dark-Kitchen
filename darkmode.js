@@ -20,9 +20,10 @@ const disableDarkMode = () => {
 //stay in dark mode or not when refreshed
 if(darkMode === "enabled"){
     enableDarkMode();
+    darkModeToggle.innerHTML = '<img src="./ressources/icons/sun.svg" alt="Dark disable">'
 }
 else{
-    darkModeToggle.innerHTML = '<img src="./ressources/icons/sun.svg" alt="Dark disable">'
+    darkModeToggle.innerHTML = '<img src="./ressources/icons/moon.svg" alt="Dark enable">'
 }
 
 
@@ -33,11 +34,11 @@ darkModeToggle.addEventListener("click", () => {
 
     if(darkMode !== "enabled"){
         enableDarkMode();
-        darkModeToggle.innerHTML = '<img src="./ressources/icons/moon.svg" alt="Dark enable">';
+        darkModeToggle.innerHTML = '<img src="./ressources/icons/sun.svg" alt="Dark disable">';
 
     }
     else{
-        disableDarkMode();
-        darkModeToggle.innerHTML = '<img src="./ressources/icons/sun.svg" alt="Dark disable">';
+        disableDarkMode();        
+        darkModeToggle.innerHTML = '<img src="./ressources/icons/moon.svg" alt="Dark enable">';
     }
 });
