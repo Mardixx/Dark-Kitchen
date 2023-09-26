@@ -82,6 +82,7 @@ header h1 {
   padding: 5px;
   margin: 10px auto 10px auto;
   background-color: lightgray;
+  width: -moz-fit-content;
   width: fit-content;
   border-radius: 10px;
 }
@@ -137,26 +138,6 @@ header h1 {
   border-radius: 10px;
 }
 
-<<<<<<< HEAD
-.sect-review {
-  display: flex;
-  flex-direction: column;
-}
-.sect-review .review {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
-}
-.sect-review .review img {
-  border-radius: 5.625rem;
-}
-.sect-review .review .comment {
-  text-align: center;
-  letter-spacing: 2px;
-}
-
 @media screen and (min-width: 768px) {
   header {
     height: 500px;
@@ -209,10 +190,10 @@ header h1 {
     margin: 5px 0 5px 0;
   }
   .sect-article .card .picture {
-    width: 15rem;
+    width: 17vw;
     -o-object-fit: cover;
        object-fit: cover;
-    margin: 5px 0 5px 0;
+    margin: 5px;
     border-radius: 10px;
   }
   .sect-article .card .addItem {
@@ -229,8 +210,6 @@ header h1 {
     border-radius: 10px;
   }
 }
-=======
->>>>>>> 7e53102e8407af130cae31b6028dd52794ae3b21
 .darkmode-toggle {
   position: absolute;
   background-color: #fff;
@@ -375,7 +354,6 @@ footer nav li img {
     width: 70px;
   }
 }
-
 .sect-review .customers {
   display: flex;
   justify-content: center;
