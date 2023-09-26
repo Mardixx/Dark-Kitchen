@@ -26,6 +26,7 @@ function listenToAddingCart() {
         button.addEventListener("click", function() {
             let itemName = button.parentNode.getElementsByTagName("h2")[0].innerText;
             let cartFilter = cart.filter(e => e.name == itemName )[0];
+            shoppingModal.style.display = "block";
             if(cartFilter !== undefined){
                 cartFilter.count ++ ;
             }
