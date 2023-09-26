@@ -138,25 +138,6 @@ header h1 {
   border-radius: 10px;
 }
 
-.sect-review {
-  display: flex;
-  flex-direction: column;
-}
-.sect-review .review {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
-}
-.sect-review .review img {
-  border-radius: 5.625rem;
-}
-.sect-review .review .comment {
-  text-align: center;
-  letter-spacing: 2px;
-}
-
 .darkmode-toggle {
   position: absolute;
   background-color: #fff;
@@ -259,4 +240,16 @@ footer nav li:hover {
 }
 footer nav li img {
   width: 20px;
+}
+
+.sect-review .customers {
+  display: flex;
+  justify-content: center;
+}
+.sect-review .customers .review {
+  display: flex;
+  justify-content: center;
+}
+.sect-review .customers .review .img {
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */
