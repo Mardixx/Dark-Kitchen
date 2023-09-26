@@ -138,25 +138,78 @@ header h1 {
   border-radius: 10px;
 }
 
-.sect-review {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 768px) {
+  header {
+    height: 500px;
+  }
+  header h1 {
+    color: #ffffff;
+    text-shadow: #000000 20px 2px;
+    font-size: 150px;
+    letter-spacing: 10px;
+  }
+  .tri {
+    padding: 15px;
+    margin: 10px auto 10px auto;
+    background-color: lightgray;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .tri #category-select {
+    font-size: 20px;
+  }
+  .sect-article {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(3, 17rem);
+    justify-content: space-evenly;
+    gap: 3rem;
+    margin: 2rem;
+  }
+  .sect-article .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: lightgray;
+    margin: 0 5px 0 5px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .sect-article .card .category {
+    margin: 5px 0 5px 0;
+  }
+  .sect-article .card .price {
+    margin: 5px 0 5px 0;
+  }
+  .sect-article .card .name {
+    text-align: center;
+    margin: 5px 0 5px 0;
+  }
+  .sect-article .card .picture {
+    width: 17vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  .sect-article .card .addItem {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .sect-article .card .addItem .addItemImg {
+    width: 30px;
+    border-radius: 10px;
+  }
 }
-.sect-review .review {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
-}
-.sect-review .review img {
-  border-radius: 5.625rem;
-}
-.sect-review .review .comment {
-  text-align: center;
-  letter-spacing: 2px;
-}
-
 .darkmode-toggle {
   position: absolute;
   background-color: #fff;
@@ -227,12 +280,24 @@ header h1 {
   animation: slideIn 0.5s forwards;
 }
 
+.animateOff {
+  animation: slideOut 0.5s linear;
+}
+
 @keyframes slideIn {
   0% {
     transform: translateX(-100%);
   }
   100% {
     transform: translateX(1vh);
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform: translateX(1vh);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 footer {
@@ -259,43 +324,4 @@ footer nav li:hover {
 }
 footer nav li img {
   width: 20px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
