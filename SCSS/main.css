@@ -53,10 +53,6 @@ table {
   border-spacing: 0;
 }
 
-.darkmode {
-  background-color: gray;
-}
-
 body {
   font-family: "Sedgwick Ave Display", cursive;
 }
@@ -82,7 +78,6 @@ header h1 {
   padding: 5px;
   margin: 10px auto 10px auto;
   background-color: lightgray;
-  width: -moz-fit-content;
   width: fit-content;
   border-radius: 10px;
 }
@@ -152,7 +147,6 @@ header h1 {
     padding: 15px;
     margin: 10px auto 10px auto;
     background-color: lightgray;
-    width: -moz-fit-content;
     width: fit-content;
     border-radius: 10px;
     font-size: 20px;
@@ -190,10 +184,9 @@ header h1 {
     margin: 5px 0 5px 0;
   }
   .sect-article .card .picture {
-    width: 17vw;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin: 5px;
+    width: 15rem;
+    object-fit: cover;
+    margin: 5px 0 5px 0;
     border-radius: 10px;
   }
   .sect-article .card .addItem {
@@ -281,7 +274,7 @@ header h1 {
 }
 
 .animateOff {
-  animation: slideOut 0.5s linear;
+  animation: slideOut 0.5s ease-in;
 }
 
 @keyframes slideIn {
@@ -326,38 +319,6 @@ footer nav li img {
   width: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  footer {
-    background-color: lightgray;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  footer nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-  }
-  footer nav li {
-    background-color: white;
-    border-radius: 50%;
-    padding: 50px;
-    margin: 0 5% 0 5%;
-    list-style-type: none;
-  }
-  footer nav li:hover {
-    background-color: grey;
-  }
-  footer nav li img {
-    width: 70px;
-  }
-}
-.sect-review .newcustomer {
-  display: block;
-  margin: auto;
-}
 .sect-review .customers {
   padding-top: 20px;
   display: flex;
@@ -385,4 +346,28 @@ footer nav li img {
 }
 .sect-review .customers .review .comment {
   padding-bottom: 20px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.darkmode {
+  background-color: rgb(23, 23, 23);
+}
+.darkmode .tri {
+  background-color: rgb(87, 87, 87);
+  color: white;
+}
+.darkmode .modal-content {
+  background-color: rgb(87, 87, 87);
+}
+.darkmode .modal-content .removeItem {
+  background-color: white;
+}
+.darkmode .card {
+  background-color: rgb(87, 87, 87);
+  color: white;
+}
+.darkmode .review {
+  color: white;
+}
+.darkmode footer {
+  background-color: rgb(87, 87, 87);
+}
