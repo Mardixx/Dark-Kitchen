@@ -209,3 +209,6 @@ header h1 {
     transform: translateX(-100%);
   }
 }
+footer {
+  background-color: lightgray;
+}
