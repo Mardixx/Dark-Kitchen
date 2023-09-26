@@ -96,7 +96,6 @@ function addcustomer() {
      if (customersarray.length > 3) {
       customersarray.pop(); // Remove the last customer
   }
-
   // Update the customer reviews
   reviews();
 }
