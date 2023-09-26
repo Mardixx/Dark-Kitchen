@@ -9,10 +9,14 @@ shoppingCloseButton.addEventListener("click", closeShoppingCart)
 
 function showShoppingCart() {
     shoppingModal.style.display = "block";
+    shoppingModal.classList.add("animateOn");
+    shoppingModal.classList.remove("animateOff");
 }
 
 function closeShoppingCart() {
     shoppingModal.style.display = "none";
+    shoppingModal.classList.remove("animateOn");
+    shoppingModal.classList.add("animateOff");
 }
 
 function listenToAddingCart() {
@@ -66,7 +70,7 @@ function addItemsToModal() {
         card.appendChild(removeItem);
     
         const removeItemImg = document.createElement("img");
-        removeItemImg.src = "ressources/icons/delete.jpg";
+        removeItemImg.src = "ressources/icons/trash.png";
         removeItem.appendChild(removeItemImg);
         removeItemImg.classList.add("removeItemImg");
 
@@ -91,7 +95,7 @@ function addItemsToModal() {
     }
 
     const total = document.createElement("span");
-    total.textContent = "Total: " + totalCount;
+    total.textContent = "Total: " + totalCount + " $";
     shoppingModalContent.appendChild(total);
     total.classList.add("total");
 
