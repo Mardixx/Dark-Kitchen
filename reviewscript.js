@@ -111,34 +111,4 @@ addbutton.addEventListener("click", function() {
   addcustomer();
 });
 
-function displayModal(customer) {
-    const modal = document.getElementById("customerModal");
-    const modalName = document.getElementById("modalName");
-    const modalPicture = document.getElementById("modalPicture");
-    const modalDate = document.getElementById("modalDate");
-    const modalDish = document.getElementById("modalDish");
-    const modalComment = document.getElementById("modalComment");
-    const closeModal = document.getElementById("closeModal");
-
-    // Set modal content with the new customer's details
-    modalName.textContent = customer.name;
-    modalPicture.src = customer.picture;
-    modalDate.textContent = customer.date;
-    modalDish.textContent = customer.dish;
-    modalComment.textContent = customer.comment;
-
-    // Display the modal
-    modal.style.display = "block";
-
-    // Close the modal when the close button is clicked
-    closeModal.addEventListener("click", function() {
-        modal.style.display = "none";
-    });
-
-    // Close the modal if the user clicks anywhere outside the modal
-    window.addEventListener("click", function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    });
-}
+//MODAL!!!!!!!!
