@@ -53,10 +53,6 @@ table {
   border-spacing: 0;
 }
 
-.darkmode {
-  background-color: gray;
-}
-
 body {
   font-family: "Sedgwick Ave Display", cursive;
 }
@@ -82,7 +78,6 @@ header h1 {
   padding: 5px;
   margin: 10px auto 10px auto;
   background-color: lightgray;
-  width: -moz-fit-content;
   width: fit-content;
   border-radius: 10px;
 }
@@ -152,7 +147,6 @@ header h1 {
     padding: 15px;
     margin: 10px auto 10px auto;
     background-color: lightgray;
-    width: -moz-fit-content;
     width: fit-content;
     border-radius: 10px;
     font-size: 20px;
@@ -190,10 +184,9 @@ header h1 {
     margin: 5px 0 5px 0;
   }
   .sect-article .card .picture {
-    width: 17vw;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin: 5px;
+    width: 15rem;
+    object-fit: cover;
+    margin: 5px 0 5px 0;
     border-radius: 10px;
   }
   .sect-article .card .addItem {
@@ -364,4 +357,28 @@ footer nav li img {
 }
 .sect-review .customers .review .img {
   border-radius: 50%;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.darkmode {
+  background-color: rgb(23, 23, 23);
+}
+.darkmode .tri {
+  background-color: rgb(87, 87, 87);
+  color: white;
+}
+.darkmode .modal-content {
+  background-color: rgb(87, 87, 87);
+}
+.darkmode .modal-content .removeItem {
+  background-color: white;
+}
+.darkmode .card {
+  background-color: rgb(87, 87, 87);
+  color: white;
+}
+.darkmode .review {
+  color: white;
+}
+.darkmode footer {
+  background-color: rgb(87, 87, 87);
+}
