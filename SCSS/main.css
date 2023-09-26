@@ -127,4 +127,8 @@ header h1 {
 .sect-article .card .addItem .addItemImg {
   width: 30px;
   border-radius: 10px;
+}
+
+.shopping-cart {
+  background-color: #d3ad7f;
 }/*# sourceMappingURL=main.css.map */
