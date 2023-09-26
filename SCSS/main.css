@@ -139,18 +139,21 @@ header h1 {
 
 .sect-review {
   display: flex;
+  flex-direction: column;
 }
 .sect-review .review {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px 0;
 }
 .sect-review .review img {
   border-radius: 5.625rem;
 }
 .sect-review .review .comment {
   text-align: center;
+  letter-spacing: 2px;
 }
 
 .darkmode-toggle {
@@ -242,4 +245,26 @@ header h1 {
 }
 footer {
   background-color: lightgray;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+footer nav li {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 5% 0 5%;
+  list-style-type: none;
+}
+footer nav li:hover {
+  background-color: grey;
+}
+footer nav li img {
+  width: 20px;
 }
