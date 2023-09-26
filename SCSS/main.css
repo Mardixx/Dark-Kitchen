@@ -157,6 +157,78 @@ header h1 {
   letter-spacing: 2px;
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    height: 500px;
+  }
+  header h1 {
+    color: #ffffff;
+    text-shadow: #000000 20px 2px;
+    font-size: 150px;
+    letter-spacing: 10px;
+  }
+  .tri {
+    padding: 15px;
+    margin: 10px auto 10px auto;
+    background-color: lightgray;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .tri #category-select {
+    font-size: 20px;
+  }
+  .sect-article {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(3, 17rem);
+    justify-content: space-evenly;
+    gap: 3rem;
+    margin: 2rem;
+  }
+  .sect-article .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: lightgray;
+    margin: 0 5px 0 5px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .sect-article .card .category {
+    margin: 5px 0 5px 0;
+  }
+  .sect-article .card .price {
+    margin: 5px 0 5px 0;
+  }
+  .sect-article .card .name {
+    text-align: center;
+    margin: 5px 0 5px 0;
+  }
+  .sect-article .card .picture {
+    width: 15rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 5px 0 5px 0;
+    border-radius: 10px;
+  }
+  .sect-article .card .addItem {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .sect-article .card .addItem .addItemImg {
+    width: 30px;
+    border-radius: 10px;
+  }
+}
 .darkmode-toggle {
   position: absolute;
   background-color: #fff;
@@ -265,4 +337,33 @@ footer nav li:hover {
 }
 footer nav li img {
   width: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    background-color: lightgray;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+  }
+  footer nav li {
+    background-color: white;
+    border-radius: 50%;
+    padding: 50px;
+    margin: 0 5% 0 5%;
+    list-style-type: none;
+  }
+  footer nav li:hover {
+    background-color: grey;
+  }
+  footer nav li img {
+    width: 70px;
+  }
 }/*# sourceMappingURL=main.css.map */
