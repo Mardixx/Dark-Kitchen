@@ -22,15 +22,19 @@ if(darkMode === "enabled"){
     enableDarkMode();
 }
 
-//event listener on click button
+
+
 darkModeToggle.addEventListener("click", () => {
     
     darkMode = localStorage.getItem("darkMode");
 
     if(darkMode !== "enabled"){
         enableDarkMode();
+        darkModeToggle.innerHTML = '<img src="./ressources/icons/moon.svg" alt="Dark enable">';
+
     }
     else{
         disableDarkMode();
+        darkModeToggle.innerHTML = '<img src="./ressources/icons/sun.svg" alt="Dark disable">';
     }
 });
