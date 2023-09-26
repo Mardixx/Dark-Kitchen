@@ -62,7 +62,7 @@ function reviews() {
   //call function
   reviews();
 
-  // Function for obtaining the current date in "day/month/year" format
+  // Function for the current date
   function date() {
     const currentDate = new Date();
     const year = currentDate.getFullYear();
@@ -72,7 +72,7 @@ function reviews() {
 }
   
 
-// Function for adding a new customer using prompts
+// Function adding a new customer
 function addcustomer() {
     
     const name = prompt("Enter the customer's name: ");
@@ -80,7 +80,7 @@ function addcustomer() {
     const dish = prompt("choose your dish: ");
     const comment = prompt("Enter your comment: ");
   
-    // Create an object new customer
+    // Object new customer
     const newcustomer = {
       name: name,
       picture: picture,
@@ -92,19 +92,53 @@ function addcustomer() {
     customers.innerHTML = '';
 
     customersarray.unshift(newcustomer);
-     // Check if there are more than 3 customers, and if so, remove the last one
+    
      if (customersarray.length > 3) {
       customersarray.pop(); // Remove the last customer
   }
 
   // Update the customer reviews
   reviews();
+
+      // Display the modal with the new customer's details
+      displayModal(newcustomer);
 }
 
 const addbutton = document.querySelector(".newcustomer");
 
-// Add an event handler when the button is clicked
+// Add when the button is clicked
 addbutton.addEventListener("click", function() {
   addcustomer();
 });
 
+function displayModal(customer) {
+    const modal = document.getElementById("customerModal");
+    const modalName = document.getElementById("modalName");
+    const modalPicture = document.getElementById("modalPicture");
+    const modalDate = document.getElementById("modalDate");
+    const modalDish = document.getElementById("modalDish");
+    const modalComment = document.getElementById("modalComment");
+    const closeModal = document.getElementById("closeModal");
+
+    // Set modal content with the new customer's details
+    modalName.textContent = customer.name;
+    modalPicture.src = customer.picture;
+    modalDate.textContent = customer.date;
+    modalDish.textContent = customer.dish;
+    modalComment.textContent = customer.comment;
+
+    // Display the modal
+    modal.style.display = "block";
+
+    // Close the modal when the close button is clicked
+    closeModal.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    // Close the modal if the user clicks anywhere outside the modal
+    window.addEventListener("click", function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+}
