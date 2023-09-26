@@ -158,7 +158,7 @@ header h1 {
 
 .darkmode-toggle {
   position: absolute;
-  background-color: #333;
+  background-color: #fff;
   width: 60px;
   height: 30px;
   border-radius: 30px;
@@ -167,13 +167,7 @@ header h1 {
   right: 5px;
 }
 .darkmode-toggle img {
-  width: 50px;
-}
-
-.darkmode-toggle::before {
-  font-size: 18px;
-  color: #fff;
-  transform: translateY(-50%) scale(0);
+  width: 25px;
 }
 
 .shopping-cart {
@@ -185,6 +179,9 @@ header h1 {
   cursor: pointer;
   top: 1%;
   left: 5px;
+}
+.shopping-cart img {
+  width: 25px;
 }
 
 .modal-shopping-cart {
