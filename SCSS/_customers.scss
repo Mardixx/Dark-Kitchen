@@ -1,15 +1,30 @@
 .sect-review{
+       .newcustomer{
+        display: block;
+        margin: auto;
+       
+       }
     .customers{
+        padding-top: 20px;
         display: flex;
         justify-content: center;
+        align-items: center;
         .review{
-            display: flex;
-            justify-content: center;
-         .img{
+           text-align: center;
+           font-family: 'Sedgwick Ave Display', cursive;
+           
+            line-height: 40px;
+           img{
             border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+           
+           }
+          
+           .comment{
+            padding-bottom: 20px;
+           }
          }
-        }
-    
-    }
+     }
 
 }

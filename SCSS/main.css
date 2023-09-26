@@ -242,14 +242,26 @@ footer nav li img {
   width: 20px;
 }
 
+.sect-review .newcustomer {
+  display: block;
+  margin: auto;
+}
 .sect-review .customers {
+  padding-top: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .sect-review .customers .review {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  font-family: "Sedgwick Ave Display", cursive;
+  line-height: 40px;
 }
-.sect-review .customers .review .img {
+.sect-review .customers .review img {
   border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.sect-review .customers .review .comment {
+  padding-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
