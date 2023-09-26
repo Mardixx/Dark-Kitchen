@@ -22,7 +22,7 @@ const customersarray = [
     }
 ]
 
-const customers = document.querySelector(".sect-review");
+const customers = document.querySelector(".customers");
 
 function reviews() {
   
@@ -81,7 +81,7 @@ function addcustomer() {
     const comment = prompt("Enter your comment: ");
   
     // Create an object new customer
-    const newCustomer = {
+    const newcustomer = {
       name: name,
       picture: picture,
       date: date(),
