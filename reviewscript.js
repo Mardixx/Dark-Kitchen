@@ -80,7 +80,7 @@ function addcustomer() {
     const dish = prompt("choose your dish: ");
     const comment = prompt("Enter your comment: ");
   
-    // Create an object representing the new customer
+    // Create an object new customer
     const newCustomer = {
       name: name,
       picture: picture,
@@ -89,10 +89,15 @@ function addcustomer() {
       comment: comment,
     };
   
+    customersarray.unshift(newCustomer);
+    customersarray.removeChild(customersarray.lastElementChild);
+    //customersarray.removelastchild(customers.lastChild);
+    
 
-    customersarray.push(newCustomer);
-  
-    // Update the posting of notices
+      while (customersarray.lastChild) {
+        customersarray.removeChild(customersarray.lastChild);
+  }
+    // Update  posting
     reviews();
 }
 
@@ -100,7 +105,6 @@ const addbutton = document.querySelector(".newcustomer");
 
 // Add an event handler when the button is clicked
 addbutton.addEventListener("click", function() {
-
   addcustomer();
 });
 
