@@ -218,13 +218,15 @@ header h1 {
   background-color: white;
   border-radius: 10px;
 }
+.modal-shopping-cart .placeOrder {
+  margin-left: 2rem;
+  background-color: white;
+  border-radius: 30px;
+  cursor: pointer;
+}
 
 .animateOn {
   animation: slideIn 0.5s forwards;
-}
-
-.animateOff {
-  animation: slideOut 0.5s;
 }
 
 @keyframes slideIn {
@@ -233,14 +235,6 @@ header h1 {
   }
   100% {
     transform: translateX(1vh);
-  }
-}
-@keyframes slideOut {
-  0% {
-    transform: translateX(1vh);
-  }
-  100% {
-    transform: translateX(-100%);
   }
 }
 footer {
