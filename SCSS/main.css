@@ -136,22 +136,4 @@ header h1 {
 .sect-article .card .addItem .addItemImg {
   width: 30px;
   border-radius: 10px;
-}
-
-
-.sect-review {
-  display: flex;
-}
-.sect-review .review {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.sect-review .review img {
-  border-radius: 5.625rem;
-}
-.sect-review .review .comment {
-  text-align: center;
-
 }/*# sourceMappingURL=main.css.map */
