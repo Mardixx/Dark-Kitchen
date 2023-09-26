@@ -136,4 +136,50 @@ header h1 {
 .sect-article .card .addItem .addItemImg {
   width: 30px;
   border-radius: 10px;
+}
+
+.sect-review {
+  display: flex;
+}
+.sect-review .review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sect-review .review img {
+  border-radius: 5.625rem;
+}
+.sect-review .review .comment {
+  text-align: center;
+}
+
+.darkmode-toggle {
+  position: absolute;
+  background-color: #333;
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  top: 1%;
+  right: 5px;
+}
+
+.darkmode-toggle::before {
+  content: "\f185";
+  font-family: "Font Awesome 5 Free";
+  font-size: 18px;
+  color: #fff;
+  transform: translateY(-50%) scale(0);
+}
+
+.shopping-cart {
+  position: absolute;
+  background-color: #d3ad7f;
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  top: 1%;
+  left: 5px;
 }/*# sourceMappingURL=main.css.map */
