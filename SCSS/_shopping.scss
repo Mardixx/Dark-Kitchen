@@ -3,11 +3,9 @@
     right: 0;
 
     .modal-content{
-        width: 80vh;
+        width: 100%;
         background-color: lightgrey;
         border-radius: 10px;
-        
-        
     
         .card{
             display: grid;
@@ -21,7 +19,7 @@
             width: 35px;
             aspect-ratio: 1/1;
             border: none;
-            background-color: rgb(169, 51, 51);
+            background-color: transparent;
             border-radius: 10px;
         }
 
@@ -43,18 +41,17 @@
 }
 
 .animateOff{
-    animation: slideOut 0.5s forwards;
+    animation: slideOut 0.5s;
 }
 
 @keyframes slideIn {
     0% { transform: translateX(-100%); }
     100% { transform: translateX(1vh); }
-  }
+}
 
-  @keyframes slideOut {
-
-    0% { transform: translateX(1vh); }
-    100% { transform: translateX(-100%); }
-    
-  }
+@keyframes slideOut {
+  0% { transform: translateX(1vh); }
+  100% { transform: translateX(-100%); }
+  
+}
 
