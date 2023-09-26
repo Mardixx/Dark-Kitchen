@@ -10,13 +10,11 @@ shoppingCloseButton.addEventListener("click", closeShoppingCart)
 function showShoppingCart() {
     shoppingModal.style.display = "block";
     shoppingModal.classList.add("animateOn");
-    shoppingModal.classList.remove("animateOff");
 }
 
 function closeShoppingCart() {
     shoppingModal.style.display = "none";
     shoppingModal.classList.remove("animateOn");
-    shoppingModal.classList.add("animateOff");
 }
 
 function listenToAddingCart() {
@@ -27,6 +25,7 @@ function listenToAddingCart() {
             let itemName = button.parentNode.getElementsByTagName("h2")[0].innerText;
             let cartFilter = cart.filter(e => e.name == itemName )[0];
             shoppingModal.style.display = "block";
+            shoppingModal.classList.add("animateOn");
             if(cartFilter !== undefined){
                 cartFilter.count ++ ;
             }
@@ -99,6 +98,11 @@ function addItemsToModal() {
     total.textContent = "Total: " + totalCount + " $";
     shoppingModalContent.appendChild(total);
     total.classList.add("total");
+
+    const placeOrder = document.createElement("button");
+    placeOrder.textContent = "Place Order";
+    shoppingModalContent.appendChild(placeOrder);
+    placeOrder.classList.add("placeOrder");
 
     shoppingModalContent.querySelectorAll(".removeItem").forEach(item => {
         item.addEventListener("click", function(){
