@@ -98,17 +98,21 @@ header {
 
 .sect-review{
     display:flex;
+    flex-direction:column;
     
     .review{
         display:flex;
         flex-direction:column;
         justify-content:center;
         align-items:center;
+        margin: 20px 0;
         img{
             border-radius: 5.625rem;
         }
         .comment{
             text-align:center;
+            letter-spacing: 2px;
+            
         }
     }
 }
