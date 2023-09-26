@@ -19,7 +19,7 @@ function showShoppingCart() {
 //     shoppingModal.classList.add("animateOff");
 // }
 
-let flag = false;
+
 shoppingCloseButton.addEventListener("click", function() {
 //     setInterval(() => {
 //     shoppingModal.style.display = "none";
@@ -27,18 +27,14 @@ shoppingCloseButton.addEventListener("click", function() {
 // }, 500);
 // shoppingModal.classList.remove("animateOn");
 // shoppingModal.classList.add("animateOff");
-if (!flag) {
-    shoppingModal.classList.add("animateOn");
-    flag = true;
-}
-else{
+setTimeout(function(){
     shoppingModal.classList.add("animateOff");
-    setTimeout(function(){
+}, 200)
 
-        shoppingModal.style.display = "none";
-        flag = false;
-    }, 1000)
-}
+setTimeout(function(){
+    shoppingModal.style.display = "none";
+}, 640)
+
 })
 
 function listenToAddingCart() {
