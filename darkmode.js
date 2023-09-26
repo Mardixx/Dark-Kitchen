@@ -21,6 +21,9 @@ const disableDarkMode = () => {
 if(darkMode === "enabled"){
     enableDarkMode();
 }
+else{
+    darkModeToggle.innerHTML = '<img src="./ressources/icons/sun.svg" alt="Dark disable">'
+}
 
 
 
