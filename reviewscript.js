@@ -62,25 +62,25 @@ function reviews() {
   //call function
   reviews();
 
-  // Function for obtaining the current date in "day/month/year" format
+  // Function for obtaining the current date
   function date() {
-    const currentDate = new Date();
-    const year = currentDate.getFullYear();
-    const month = currentDate.getMonth() + 1;
-    const day = currentDate.getDate();
+    const currentdate = new Date();
+    const year = currentdate.getFullYear();
+    const month = currentdate.getMonth() + 1;
+    const day = currentdate.getDate();
     return `${day}/${month}/${year}`;
 }
   
 
-// Function for adding a new customer using prompts
+// Function for adding a new customer
 function addcustomer() {
-    
+
     const name = prompt("Enter the customer's name: ");
     const picture = prompt("Enter the path to the client image: ");
     const dish = prompt("choose your dish: ");
     const comment = prompt("Enter your comment: ");
   
-    // Create an object representing the new customer
+    // Create an object new customer
     const newCustomer = {
       name: name,
       picture: picture,
@@ -89,10 +89,15 @@ function addcustomer() {
       comment: comment,
     };
   
+    customersarray.unshift(newCustomer);
+    customersarray.removeChild(customersarray.lastElementChild);
+    //customersarray.removelastchild(customers.lastChild);
+    
 
-    customersarray.push(newCustomer);
-  
-    // Update the posting of notices
+      while (customersarray.lastChild) {
+        customersarray.removeChild(customersarray.lastChild);
+  }
+    // Update  posting
     reviews();
 }
 
