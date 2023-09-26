@@ -81,31 +81,30 @@ function addcustomer() {
     const comment = prompt("Enter your comment: ");
   
     // Create an object new customer
-    const newCustomer = {
+    const newcustomer = {
       name: name,
       picture: picture,
       date: date(),
       dish: dish,
       comment: comment,
     };
-  
-    customersarray.unshift(newCustomer);
-    customersarray.removeChild(customersarray.lastElementChild);
-    //customersarray.removelastchild(customers.lastChild);
-    
+     // Clear the existing customer reviews
+    customers.innerHTML = '';
 
-      while (customersarray.lastChild) {
-        customersarray.removeChild(customersarray.lastChild);
+    customersarray.unshift(newcustomer);
+     // Check if there are more than 3 customers, and if so, remove the last one
+     if (customersarray.length > 3) {
+      customersarray.pop(); // Remove the last customer
   }
-    // Update  posting
-    reviews();
+
+  // Update the customer reviews
+  reviews();
 }
 
 const addbutton = document.querySelector(".newcustomer");
 
 // Add an event handler when the button is clicked
 addbutton.addEventListener("click", function() {
-
   addcustomer();
 });
 
