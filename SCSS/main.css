@@ -82,6 +82,7 @@ header h1 {
   padding: 5px;
   margin: 10px auto 10px auto;
   background-color: lightgray;
+  width: -moz-fit-content;
   width: fit-content;
   border-radius: 10px;
 }
@@ -258,4 +259,4 @@ footer nav li:hover {
 }
 footer nav li img {
   width: 20px;
-}
+}/*# sourceMappingURL=main.css.map */
