@@ -371,34 +371,51 @@ footer .nav-footer a img:hover {
   font-size: 17px;
 }
 .sect-review .customers {
-  padding-top: 20px;
+  margin: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .sect-review .customers .review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 40px;
+  font-family: "Crimson Text", serif;
+  line-height: 30px;
+  margin: 10px;
 }
 .sect-review .customers .review img {
   border-radius: 50%;
-  display: block;
-  margin: 0 auto;
+  margin: 10px;
 }
 .sect-review .customers .review .name {
-  display: block;
+  text-transform: uppercase;
+  margin: 10px;
+  letter-spacing: 2px;
 }
 .sect-review .customers .review .date {
-  display: block;
+  letter-spacing: 2px;
 }
 .sect-review .customers .review .dish {
-  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .sect-review .customers .review .comment {
-  padding-bottom: 20px;
+  margin: 10px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
 }
 
+@media screen and (min-width: 768px) {
+  .sect-review .customers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .darkmode {
   background-color: rgb(23, 23, 23);
 }
