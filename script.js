@@ -132,6 +132,7 @@ function generateHTML(array) {
       
       const picture = document.createElement("img");
       picture.src = collection.picture;
+      picture.alt = collection.name;
       card.appendChild(picture);
       picture.classList.add("picture");
     
@@ -156,6 +157,7 @@ function generateHTML(array) {
     
       const addItemImg = document.createElement("img");
       addItemImg.src = collection.addItem;
+      addItemImg.alt = "caddie";
       addItem.appendChild(addItemImg);
       addItemImg.classList.add("addItemImg");
       
