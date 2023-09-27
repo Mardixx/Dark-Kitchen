@@ -8,7 +8,6 @@ const enableDarkMode = () => {
     //update darkmode in the local storage
     localStorage.setItem("darkMode", "enabled");
      // Add a black background to the darkmode-toggle button
-     darkModeToggle.style.backgroundColor = "black";
 }
 
 //disable dark mode
@@ -18,16 +17,18 @@ const disableDarkMode = () => {
     //update darkmode in the local storage
     localStorage.setItem("darkMode", null);
     // Add a white background to the darkmode-toggle button
-    darkModeToggle.style.backgroundColor = "white";
 }
 
 //stay in dark mode or not when refreshed
 if(darkMode === "enabled"){
     enableDarkMode();
     darkModeToggle.innerHTML = '<img src="./ressources/icons/moon.svg" alt="Dark disable">'
+    darkModeToggle.style.backgroundColor = "black";
+    document.querySelector('img').style.filter = "invert(1)"
 }
 else{
     darkModeToggle.innerHTML = '<img src="./ressources/icons/sun.svg" alt="Dark enable">'
+    darkModeToggle.style.backgroundColor = "white";
 }
 
 
@@ -39,10 +40,13 @@ darkModeToggle.addEventListener("click", () => {
     if(darkMode !== "enabled"){
         enableDarkMode();
         darkModeToggle.innerHTML = '<img src="./ressources/icons/sun.svg" alt="Dark disable">';
+        darkModeToggle.style.backgroundColor = "black";
+        document.querySelector('img').style.filter = "invert(1)"
 
     }
     else{
         disableDarkMode();        
         darkModeToggle.innerHTML = '<img src="./ressources/icons/moon.svg" alt="Dark enable">';
+        darkModeToggle.style.backgroundColor = "white";
     }
 });
