@@ -10,7 +10,7 @@ const customersarray = [
     name : 'Lisa',
     picture : "./ressources/People/image-Lisa.jpg",
     date : "21/7/2023",
-    dish : "California Rolls Salmon Mix",
+    dish : "Max mix",
     comment : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, assumenda!",
     },
     {
