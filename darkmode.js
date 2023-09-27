@@ -22,13 +22,14 @@ const disableDarkMode = () => {
 //stay in dark mode or not when refreshed
 if(darkMode === "enabled"){
     enableDarkMode();
-    darkModeToggle.innerHTML = '<img src="./ressources/icons/moon.svg" alt="Dark disable">'
+    darkModeToggle.innerHTML = '<img src="./ressources/icons/sun.svg" alt="Dark disable">'
     darkModeToggle.style.backgroundColor = "black";
     document.querySelector('img').style.filter = "invert(1)"
 }
 else{
-    darkModeToggle.innerHTML = '<img src="./ressources/icons/sun.svg" alt="Dark enable">'
+    darkModeToggle.innerHTML = '<img src="./ressources/icons/moon.svg" alt="Dark enable">'
     darkModeToggle.style.backgroundColor = "white";
+    document.querySelector('img').style.filter = "invert(0)"
 }
 
 
