@@ -33,6 +33,7 @@ function reviews() {
       
       const picture = document.createElement("img");
       picture.src = customersarray.picture;
+      picture.alt = customersarray.name;
       customer.appendChild(picture);
       picture.classList.add("picture");
     
