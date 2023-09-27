@@ -369,6 +369,7 @@ footer .nav-footer a img:hover {
   padding: 10px;
   color: white;
   font-size: 17px;
+  cursor: pointer;
 }
 .sect-review .customers {
   padding-top: 20px;
